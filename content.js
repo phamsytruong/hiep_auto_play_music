@@ -4,10 +4,10 @@ setTimeout( () => {
     // view ads
     try {
         document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#reward').click();
-        alert('click ads success'); 
+        //alert('click ads success'); 
     }
     catch(ex) {
-        alert('click ads error');
+        //alert('click ads error');
     }
 }, 10 * 1000);
 
