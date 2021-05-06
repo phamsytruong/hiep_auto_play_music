@@ -82,15 +82,26 @@ setInterval( () => {
 	
 	// add if has ads again
 	setTimeout( () => {
-		// view ads
+		// Playlist
 		try {
-			document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#reward').click();
-			//alert('click ads success'); 
+		document.getElementsByClassName('ButtonRow__button ButtonRow__button--play')[0].click();
 		}
-		catch(ex) {
-			//alert('click ads error');
-		}
-	}, 5 * 1000);
+		catch(ex) {}
+		
+		setTimeout(() => {
+			// view ads
+			try {
+				document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#reward').click();
+				//alert('click ads success'); 
+			}
+			catch(ex) {
+				//alert('click ads error');
+			}
+			
+		}, 8000);
+		
+		
+	}, 3 * 1000);
 
 
 }, 50 * 1000);
