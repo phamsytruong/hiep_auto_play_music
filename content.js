@@ -3,6 +3,16 @@
 setInterval( () => {
   let bads = false;
   
+  // Click Login
+  try {
+    document.getElementsByClassName('SignupModalButtons__loginLink')[0].click();
+  }
+  catch(ex) {}
+  try {
+    document.getElementsByClassName('ButtonT3 ButtonT3--large ButtonT3--dark ButtonT3--full')[0].click();
+  }
+  catch(ex) {}
+  
   // [1] CLose  Button
   try {
     // view ads
