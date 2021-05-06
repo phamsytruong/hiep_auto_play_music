@@ -54,6 +54,22 @@ setInterval( () => {
     }
   }
   catch (ex) {}
+  
+  // loop
+  try {
+    if (document.getElementsByClassName('RepeatButton Tuner__Control__Button Tuner__Control__Repeat__Button TunerControl')[0].getAttribute('aria-label').includes('Repeat off')) {
+      document.getElementsByClassName('RepeatButton Tuner__Control__Button Tuner__Control__Repeat__Button TunerControl')[0].click();
+    }
+  }
+  catch (ex) {}
+  
+  // random
+  try {
+    if (document.getElementsByClassName('ShuffleButton Tuner__Control__Button Tuner__Control__Shuffle__Button TunerControl')[0].getAttribute('aria-checked').includes('false')) {
+      document.getElementsByClassName('ShuffleButton Tuner__Control__Button Tuner__Control__Shuffle__Button TunerControl')[0].click();
+    }
+  }
+  catch (ex) {}
 
   
 }, 7000)
