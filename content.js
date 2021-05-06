@@ -3,7 +3,7 @@ setInterval( () => {
 
   // [1] CLose Button
   try {
-    document.getElementById('close-button').click();
+    document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();
   }
   catch (ex) {}
 
