@@ -16,8 +16,11 @@ setInterval( () => {
     
     // if false
     try {
-      if (!bads)
+      if (!bads) {
         document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();  
+        console.log('click close');
+      }
+        
     }
     catch(ex) {
     }
@@ -48,4 +51,4 @@ setInterval( () => {
   catch (ex) {}
 
   
-}, 5000)
+}, 7000)
