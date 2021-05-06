@@ -3,9 +3,28 @@ setInterval( () => {
 
   // [1] CLose Button
   try {
-    document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();
+    // view ads
+    try {
+      document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#reward').click();
+    }
+    catch(ex) {
+      
+      document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();
+    }
   }
   catch (ex) {}
+  
+  try {
+    document.getElementsByClassName('ButtonT3 ButtonT3--dark ButtonT3--block')[0].click();
+  }
+  catch(ex) {
+  }
+  
+  // Playlist
+  try {
+    document.getElementsByClassName('ButtonRow__button ButtonRow__button--play')[0].click();
+  }
+  catch(ex) {}
 
   // [2] Auto replay
   try {
