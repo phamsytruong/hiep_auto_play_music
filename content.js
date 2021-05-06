@@ -1,8 +1,16 @@
 
 
+setTimeout( () => {
+    // view ads
+    try {
+      document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#reward').click();
+    }
+    catch(ex) {
+    }
+}, 6 * 1000)
+
+
 setInterval( () => {
-  let bads = false;
-  
   // Click Login
   try {
     document.getElementsByClassName('SignupModalButtons__loginLink')[0].click();
@@ -15,27 +23,12 @@ setInterval( () => {
   
   // [1] CLose  Button
   try {
-    // view ads
+    // close button
     try {
-      document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#reward').click();
-      bads = true;
-    }
-    catch(ex) {
-      
-    }
-    
-    // if false
-    try {
-      if (!bads) {
-        document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();  
-        console.log('click close');
-      }
-        
+       document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();    
     }
     catch(ex) {
     }
-   
-    
   }
   catch (ex) {}
   
@@ -90,4 +83,4 @@ setInterval( () => {
   catch (ex) {}
 
   
-}, 7000)
+}, 10 * 1000)
