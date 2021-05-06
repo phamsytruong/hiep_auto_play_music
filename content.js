@@ -1,4 +1,4 @@
-bool bads = false;
+var bads = false;
 
 setInterval( () => {
 
