@@ -1,7 +1,8 @@
-var bads = false;
+
 
 setInterval( () => {
-
+  let bads = false;
+  
   // [1] CLose  Button
   try {
     // view ads
@@ -10,9 +11,18 @@ setInterval( () => {
       bads = true;
     }
     catch(ex) {
-      if (!bads)
-        document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();
+      
     }
+    
+    // if false
+    try {
+      if (!bads)
+        document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();  
+    }
+    catch(ex) {
+    }
+   
+    
   }
   catch (ex) {}
   
