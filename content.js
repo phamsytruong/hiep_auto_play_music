@@ -7,7 +7,7 @@ setTimeout( () => {
     }
     catch(ex) {
     }
-}, 5 * 1000)
+}, 9 * 1000);
 
 
 setInterval( () => {
@@ -83,4 +83,4 @@ setInterval( () => {
   catch (ex) {}
 
   
-}, 10 * 1000)
+}, 15 * 1000)
