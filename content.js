@@ -1,3 +1,4 @@
+bool bads = false;
 
 setInterval( () => {
 
@@ -6,9 +7,11 @@ setInterval( () => {
     // view ads
     try {
       document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#reward').click();
+      bads = true;
     }
     catch(ex) {
-      document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();
+      if (!bads)
+        document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();
     }
   }
   catch (ex) {}
@@ -35,4 +38,4 @@ setInterval( () => {
   catch (ex) {}
 
   
-}, 3000)
+}, 5000)
