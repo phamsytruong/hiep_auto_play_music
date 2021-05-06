@@ -29,10 +29,18 @@ setInterval( () => {
   }
   catch (ex) {}
   
+  // resume
   try {
-    document.getElementsByClassName('ButtonT3 ButtonT3--inline')[document.getElementsByClassName('ButtonT3 ButtonT3--inline').length - 1].click() 
+    document.getElementsByClassName('ButtonT3 ButtonT3--inline')[document.getElementsByClassName('ButtonT3 ButtonT3--inline').length - 1].click(); 
   }
   catch(ex) {}
+  // let me listen
+  try {
+    document.getElementsByClassName('SimStreamViolation__acceptLink')[0].click();
+  }
+  catch(ex) {}
+  
+
   
   // Get started
   try {
