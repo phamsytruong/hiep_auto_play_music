@@ -29,6 +29,11 @@ setInterval( () => {
   }
   catch (ex) {}
   
+  try {
+    document.getElementsByClassName('ButtonT3 ButtonT3--inline')[document.getElementsByClassName('ButtonT3 ButtonT3--inline').length - 1].click() 
+  }
+  catch(ex) {}
+  
   // Get started
   try {
     document.getElementsByClassName('ButtonT3 ButtonT3--dark ButtonT3--block')[0].click();
