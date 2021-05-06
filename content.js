@@ -1,19 +1,19 @@
 
 setInterval( () => {
 
-  // [1] CLose Button
+  // [1] CLose  Button
   try {
     // view ads
     try {
       document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#reward').click();
     }
     catch(ex) {
-      
       document.querySelector('#region-coachmark iframe').contentWindow.document.querySelector('#close-button').click();
     }
   }
   catch (ex) {}
   
+  // Get started
   try {
     document.getElementsByClassName('ButtonT3 ButtonT3--dark ButtonT3--block')[0].click();
   }
