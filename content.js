@@ -1,7 +1,7 @@
 setTimeout( () => {
 	console.log('truongps: start auto()');
     Auto();
-}, 12 * 1000);
+}, 15 * 1000);
 
 
 function Auto() {
@@ -17,7 +17,7 @@ function Auto() {
 		
 	}
 	
-	// and then 5s check ads
+	// and then 8s check ads
 	setTimeout(() => {
 		console.log('truongps: view ads');
 		
