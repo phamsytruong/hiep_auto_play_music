@@ -1,7 +1,7 @@
 setTimeout( () => {
 	console.log('truongps: start auto()');
     Auto();
-}, 8 * 1000);
+}, 12 * 1000);
 
 
 function Auto() {
