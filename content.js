@@ -1,3 +1,18 @@
+// auto reload new page
+setInterval (() => {
+	if(location.href.includes('https://www.pandora.com/station')) {
+		console.log('redirect to new page');
+		
+		// Cau hinh link chuyen trang o day, moi link cach nhau bang dau |
+		// vi du: link1|link2
+		let new_page = 'https://www.pandora.com/artist/alda-bosco-sham/knowing-me-knowing-you-single/AL9dZr5n722xqZc|https://www.pandora.com/artist/alda-bosco-sham/celebration-single/ALntmqqkbbpVPpP|https://www.pandora.com/artist/alda-bosco-sham/purple-rain-single/AL222mwVzkrvdcJ';
+
+		let new_url = new_page.split('|')[Math.floor((Math.random() * new_page.split('|').length))].trim();
+		location.href = new_url;
+	}
+}, 60 * 1000); 
+
+// auto click task
 setTimeout( () => {
 	console.log('truongps: start auto()');
     Auto();
