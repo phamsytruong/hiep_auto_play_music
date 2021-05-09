@@ -1,6 +1,6 @@
 // auto reload new page
 setInterval (() => {
-	if(location.href.includes('https://www.pandora.com/station')) {
+	if(location.href.includes('https://www.pandora.com/station') || location.href.includes('https://www.pandora.com/collection')) {
 		console.log('redirect to new page');
 		
 		// Cau hinh link chuyen trang o day, moi link cach nhau bang dau |
